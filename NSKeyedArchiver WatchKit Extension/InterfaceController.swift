@@ -46,6 +46,7 @@ extension InterfaceController : WCSessionDelegate {
             // We have received an encode workout oject
             print(archivedWorkouts)
             // Decode the object
+            NSKeyedUnarchiver.setClass(WorkoutSection.self, forClassName: "WorkoutSection")
             let theWorkout = NSKeyedUnarchiver.unarchiveObject(with: archivedWorkouts) as! [WorkoutSection]
             print("Number of sections recieved \(theWorkout.count)")
         }

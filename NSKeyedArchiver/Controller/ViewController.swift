@@ -35,11 +35,13 @@ class ViewController: UIViewController {
             session.activate()
         }
         
+        NSKeyedArchiver.setClassName("WorkoutSection", for: WorkoutSection.self)
         let archivedWorkouts = NSKeyedArchiver.archivedData(withRootObject: theWorkout)
         localStorage.set(archivedWorkouts, forKey: "savedWorkouts")
         
         if let savedWorkouts = localStorage.object(forKey: "savedWorkouts") as? Data {
             theWorkout.removeAll()
+            NSKeyedUnarchiver.setClass(WorkoutSection.self, forClassName: "WorkoutSection")
             theWorkout = NSKeyedUnarchiver.unarchiveObject(with: savedWorkouts) as! [WorkoutSection]
             print("Read saved workouts from userdefaults with \(theWorkout.count) parts")
         }
