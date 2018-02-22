@@ -21,9 +21,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let firstStage = WorkoutSection(sectionType: .warmup, sectionLength: 5)
-        let secondStage = WorkoutSection(sectionType: .run, sectionLength: 25)
-        let endStage = WorkoutSection(sectionType: .cooldown, sectionLength: 5)
+        let details = WorkoutDetails(name: "Run")
+        let firstStage = WorkoutSection(sectionType: .warmup, sectionLength: 5, details: details)
+        let secondStage = WorkoutSection(sectionType: .run, sectionLength: 25, details: details)
+        let endStage = WorkoutSection(sectionType: .cooldown, sectionLength: 5, details: details)
         theWorkout.append( firstStage )
         theWorkout.append( secondStage )
         theWorkout.append( endStage )

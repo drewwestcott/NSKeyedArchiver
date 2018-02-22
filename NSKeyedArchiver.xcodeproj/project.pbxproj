@@ -23,6 +23,8 @@
 		3A0E7B93203AFDE700089FF0 /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E7B92203AFDE700089FF0 /* EnumCollection.swift */; };
 		3A0E7B94203B029C00089FF0 /* EnumCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E7B92203AFDE700089FF0 /* EnumCollection.swift */; };
 		3A0E7B95203B029F00089FF0 /* WorkoutPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E7B8F203AFDB600089FF0 /* WorkoutPart.swift */; };
+		3A107343203F13DA002DC76D /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A107342203F13DA002DC76D /* WorkoutDetails.swift */; };
+		3A107344203F3034002DC76D /* WorkoutDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A107342203F13DA002DC76D /* WorkoutDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,7 @@
 		3A0E7B7F203AFD6500089FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A0E7B8F203AFDB600089FF0 /* WorkoutPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPart.swift; sourceTree = "<group>"; };
 		3A0E7B92203AFDE700089FF0 /* EnumCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumCollection.swift; sourceTree = "<group>"; };
+		3A107342203F13DA002DC76D /* WorkoutDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				3A0E7B8F203AFDB600089FF0 /* WorkoutPart.swift */,
+				3A107342203F13DA002DC76D /* WorkoutDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +328,7 @@
 				3A0E7B93203AFDE700089FF0 /* EnumCollection.swift in Sources */,
 				3A0E7B90203AFDB600089FF0 /* WorkoutPart.swift in Sources */,
 				3A0E7B59203AFD6500089FF0 /* ViewController.swift in Sources */,
+				3A107343203F13DA002DC76D /* WorkoutDetails.swift in Sources */,
 				3A0E7B57203AFD6500089FF0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +340,7 @@
 				3A0E7B7C203AFD6500089FF0 /* ExtensionDelegate.swift in Sources */,
 				3A0E7B7A203AFD6500089FF0 /* InterfaceController.swift in Sources */,
 				3A0E7B95203B029F00089FF0 /* WorkoutPart.swift in Sources */,
+				3A107344203F3034002DC76D /* WorkoutDetails.swift in Sources */,
 				3A0E7B94203B029C00089FF0 /* EnumCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
